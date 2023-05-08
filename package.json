@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"build:comp": "pnpm --filter @packages/component build",
-		"dev:comp": "pnpm --filter @packages/component dev"
+		"dev:comp": "pnpm --filter @packages/component dev",
+		"dev:app": "pnpm --filter @projects/app dev"
 	},
 	"keywords": [],
 	"author": "",
