@@ -1,8 +1,11 @@
-export function Button(props: any) {
+import { ButtonHTMLAttributes } from 'react';
+
+type TButton = ButtonHTMLAttributes<HTMLButtonElement>;
+
+export function Button(props: TButton) {
 	return (
-		<button onClick={() => props.onClick()} className="bg-main pwt-main-title">
+		<button {...props} className="bg-main pwt-main-title">
 			{props.children}
 		</button>
 	);
 }
-export default Button;
