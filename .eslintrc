@@ -5,9 +5,16 @@
 		"es6": true
 	},
 	"root": true,
-	"extends": ["plugin:prettier/recommended", "eslint:recommended"],
+	"extends": [
+		"plugin:prettier/recommended",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react-hooks/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
-		"ecmaVersion": "latest"
+		"ecmaVersion": "latest",
+		"sourceType": "module"
 	},
 	"rules": {
 		"prettier/prettier": [
@@ -16,5 +23,6 @@
 				"endOfLine": "auto"
 			}
 		]
-	}
+	},
+	"plugins": ["react-refresh"]
 }
