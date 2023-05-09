@@ -1,1 +1,3 @@
-module.exports = require('@packages/tailwind-config/postcss.config.js');
+module.exports = {
+	content: ['**/*.{js,ts,jsx,tsx}'],
+};

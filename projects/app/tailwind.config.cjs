@@ -1,1 +1,3 @@
-module.exports = require('@packages/tailwind-config/tailwind.config.js');
+module.exports = {
+	content: ['../packages/component/**/*.{js,ts,jsx,tsx}', './index.html'],
+};
